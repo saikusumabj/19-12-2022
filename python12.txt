@@ -1,0 +1,64 @@
+
+64. Write a Python program to get file creation and modification date/times?
+A)import os.path, time
+print("Last modified: %s" % time.ctime(os.path.getmtime("todayworks.py")))
+print("Created: %s" % time.ctime(os.path.getctime("todayworks.py")))
+
+123. Write a Python program to determine the largest and smallest integers, longs, floats?
+A)import sys
+print("Float size:",sys.float_info)
+print("Integer value:",sys.int_info)
+print("maximum size:",sys.maxsize)
+
+124. Write a Python program to check whether multiple variables have the same value?
+A)x=20
+y=20
+z=20
+if x==y==z==20:
+    print("All variables are same")
+
+126. Write a Python program to get the actual module object for a given object?
+A)from inspect import getmodule
+from math import sqrt
+print(getmodule(sqrt))
+
+
+141. Write a python program to convert decimal to hexadecimal?
+Sample decimal number: 30, 4
+Expected output: 1e, 04
+A)x=30
+print(format(x,'02x'))
+x=4
+print(format(x,'02x'))
+
+114. Write a Python program to filter the positive numbers from a list?
+A)a=[1,2,3,4,5,6.8,-8]
+c=list(filter(lambda i:i>0,a))
+print("positive number in the list:",c)
+
+147. Write a Python function to check whether a number is divisible by another number. Accept two integers values form the user?
+A)a=int(input("Enter your number:"))
+b=int(input("Enter your value:"))
+if a%b==0:
+    print("number is divisible")
+else:
+    print("number is not divisible")    
+  
+148. Write a Python function to find the maximum and minimum numbers from a sequence of numbers?
+A)a=[10,20,30] 
+a.sort()
+print("max=",a[-1],"min=",a[1])  
+
+140. Write a Python program to convert an integer to binary keep leading zeros?
+Sample data : x=12
+Expected output : 00001100
+0000001100
+A)x=12
+print(format(x,'08b'))
+print(format(x,'010b'))
+
+50. Write a Python program to print without newline or space?
+A)
+for i in range(0,10):
+    print('*',end="")
+print("\n")    
